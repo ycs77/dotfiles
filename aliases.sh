@@ -35,3 +35,46 @@ alias composer74='php74 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.
 alias composer80='php80 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.phar'
 alias composer81='php81 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.phar'
 alias composer82='php82 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.phar'
+
+function vup() (
+	cd ~/Homestead
+	if [[ $1 == '-p' ]]; then
+		vagrant up --provision
+	else
+		vagrant up
+	fi
+)
+
+function vp() (
+	cd ~/Homestead
+  vagrant provision
+)
+
+function vs() (
+	cd ~/Homestead
+	if [[ ! -z $1 ]]; then
+		vagrant ssh -c "$1"
+	else
+		vagrant ssh
+	fi
+)
+
+function vh() (
+	cd ~/Homestead
+	vagrant halt
+)
+
+function vrs() (
+	cd ~/Homestead
+  vagrant halt
+	if [[ $1 == '-p' ]]; then
+    vagrant up --provision
+	else
+    vagrant up
+	fi
+)
+
+function vst() (
+	cd ~/Homestead
+	vagrant status
+)
