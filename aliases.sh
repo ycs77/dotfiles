@@ -1,3 +1,13 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias c='clear'
+
+function mkcd() {
+  mkdir "$1"
+  cd "$1"
+}
+
+# Laravel Artisan
 alias pa='php artisan'
 alias pa71='php71 artisan'
 alias pa72='php72 artisan'
@@ -21,6 +31,7 @@ alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
 alias stan='./vendor/bin/larastan'
 
+# PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
 alias php72='/c/laragon/bin/php/php-7.2.34-Win32-VC15-x64/php'
 alias php73='/c/laragon/bin/php/php-7.3.33-Win32-VC15-x64/php'
@@ -36,6 +47,7 @@ alias composer80='php80 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.
 alias composer81='php81 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.phar'
 alias composer82='php82 /c/Users/Lucas/AppData/Local/ComposerSetup/bin/composer.phar'
 
+# Homestead
 function vup() (
   cd ~/Homestead
   if [[ $1 == '-p' ]]; then
