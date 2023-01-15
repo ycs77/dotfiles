@@ -38,3 +38,7 @@
 	defaultBranch = main
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[commit]
+	gpgSign = false
+[tag]
+	gpgSign = false
