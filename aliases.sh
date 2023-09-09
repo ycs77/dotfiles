@@ -7,6 +7,10 @@ function mkcd() {
   cd "$1"
 }
 
+function killport() {
+  sudo kill -9 $(sudo lsof -t -i:"$1")
+}
+
 # Laravel Artisan
 alias pa='php artisan'
 alias pa71='php71 artisan'
