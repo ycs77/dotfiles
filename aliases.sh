@@ -33,7 +33,7 @@ alias phpunit='./vendor/bin/phpunit --colors=always'
 alias pu='phpunit'
 alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
-alias stan='./vendor/bin/larastan'
+alias stan='./vendor/bin/phpstan analyse --memory-limit=512M'
 
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
