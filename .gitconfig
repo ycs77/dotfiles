@@ -23,6 +23,7 @@
 	rs1 = reset HEAD~1
 	rs1h = reset HEAD~1 --hard
 	rb = rebase
+	rbo = rebase --onto
 	rbi = rebase -i
 	rbc = rebase --continue
 	rba = rebase --abort
