@@ -6,8 +6,8 @@
 	cfl = config --list
 	s = status
 	a = add .
-	l = log
-	lo = log --oneline --graph
+	l = log --oneline --graph
+	la = log --oneline --graph --all
 	last = log -1 HEAD
 	c = commit
 	cm = commit -m
