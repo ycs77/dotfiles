@@ -1,6 +1,7 @@
 [core]
 	autocrlf = true
 	pager = less -r
+	fileMode = false
 [alias]
 	cf = config
 	cfl = config --list
