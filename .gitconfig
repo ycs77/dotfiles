@@ -1,5 +1,5 @@
 [core]
-	autocrlf = true
+	autocrlf = input
 	pager = less -r
 	fileMode = false
 [alias]
