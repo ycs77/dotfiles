@@ -99,3 +99,14 @@ function vst() (
   cd ~/Homestead
   vagrant status
 )
+
+# Docker
+alias d='docker'
+alias dis='docker images'
+alias dps='docker ps -a'
+alias dr='docker run -it --rm'
+alias dx='docker exec -it'
+alias dc='docker compose'
+alias dup='docker compose up'
+alias dupd='docker compose up -d'
+alias ddown='docker compose down'
