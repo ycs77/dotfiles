@@ -103,7 +103,8 @@ function vst() (
 # Docker
 alias d='docker'
 alias dis='docker images'
-alias dps='docker ps -a'
+alias dps='docker ps'
+alias dpsa='docker ps -a'
 alias dr='docker run -it --rm'
 alias dx='docker exec -it'
 alias dc='docker compose'
