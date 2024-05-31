@@ -43,6 +43,7 @@ alias s='sail'
 alias sup='sail up'
 alias supd='sail up -d'
 alias sdown='sail down'
+alias sa='sail artisan'
 
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
