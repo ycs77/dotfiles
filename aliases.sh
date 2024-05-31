@@ -35,6 +35,7 @@ alias pat='php artisan tinker'
 alias phpunit='./vendor/bin/phpunit --colors=always'
 alias pu='phpunit'
 alias pest='./vendor/bin/pest'
+alias p='pest'
 alias pint='./vendor/bin/pint'
 alias stan='./vendor/bin/phpstan analyse --memory-limit=512M'
 
