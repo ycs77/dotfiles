@@ -108,7 +108,11 @@ alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dr='docker run -it --rm'
 alias dx='docker exec -it'
+
+# Docker Compose
 alias dc='docker compose'
+alias dcr='docker compose run -it --rm'
+alias dcx='docker compose exec -it'
 alias dup='docker compose up'
 alias dupd='docker compose up -d'
 alias ddown='docker compose down'
