@@ -1,0 +1,58 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{f234bf08-19c8-453d-96cf-862e63eae8d4}",
+
+    // ...
+
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImage": "D:/...",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageOpacity": 0.1,
+            "backgroundImageStretchMode": "none"
+        },
+        "list": 
+        [
+            {
+                "colorScheme": "One Half Dark",
+                "commandline": "%PROGRAMFILES%/Git/bin/bash.exe --login -i",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "filledBox",
+                "font":
+                {
+                    "face": "Consolas",
+                    "size": 16.0
+                },
+                "guid": "{f234bf08-19c8-453d-96cf-862e63eae8d4}",
+                "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
+                "name": "Bash",
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "adjustIndistinguishableColors": "indexed",
+                "colorScheme": "One Half Dark",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "filledBox",
+                "font":
+                {
+                    "face": "Consolas",
+                    "size": 16.0
+                },
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "source": "Windows.Terminal.Wsl"
+            },
+
+            // ...
+        ]
+    },
+
+    // ...
+}

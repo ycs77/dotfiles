@@ -10,3 +10,8 @@ trim_trailing_whitespace = true
 
 [.gitconfig]
 indent_style = tab
+indent_size = 4
+
+[windows-terminal-settings.json]
+indent_size = 4
+trim_trailing_whitespace = false
