@@ -38,6 +38,11 @@ alias pest='./vendor/bin/pest'
 alias p='pest'
 alias pint='./vendor/bin/pint'
 alias stan='./vendor/bin/phpstan analyse --memory-limit=512M'
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias s='sail'
+alias sup='sail up'
+alias supd='sail up -d'
+alias sdown='sail down'
 
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
