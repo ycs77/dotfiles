@@ -1,7 +1,16 @@
 [core]
-	autocrlf = input
-	pager = less -r
+	autocrlf = false
 	fileMode = false
+	pager = less -r
+	quotepath = false
+[help]
+	autocorrect = 30
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[init]
+	defaultBranch = main
 [alias]
 	cf = config
 	cfl = config --list
@@ -36,8 +45,6 @@
 	pl = pull
 [credential]
 	helper = wincred
-[init]
-	defaultBranch = main
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [commit]
