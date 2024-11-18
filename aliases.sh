@@ -46,6 +46,16 @@ alias supd='sail up -d'
 alias sdown='sail down'
 alias sa='sail artisan'
 
+# NPM
+alias ni='npm install'
+alias nd='npm run dev'
+alias nb='npm run build'
+alias nt='npm run test'
+alias y='yarn'
+alias yd='yarn dev'
+alias yb='yarn build'
+alias yt='yarn test'
+
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
 alias php72='/c/laragon/bin/php/php-7.2.34-Win32-VC15-x64/php'
