@@ -2,6 +2,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias c='clear'
 alias co='code'
+alias cdco='cd /d/dev/code'
+alias cdte='cd /d/dev/testing'
 
 function mkcd() {
   mkdir "$1"
