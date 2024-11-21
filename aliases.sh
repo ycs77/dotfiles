@@ -4,6 +4,7 @@ alias c='clear'
 alias co='code'
 alias cdco='cd /d/dev/code'
 alias cdte='cd /d/dev/testing'
+alias g='git'
 
 function mkcd() {
   mkdir "$1"
