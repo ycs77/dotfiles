@@ -58,6 +58,7 @@ alias y='yarn'
 alias yd='yarn dev'
 alias yb='yarn build'
 alias yt='yarn test'
+alias ytr='yarn test --run'
 
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
