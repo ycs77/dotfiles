@@ -1,0 +1,9 @@
+Host other-user
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_other_user
+
+Host lucas-host
+  HostName 127.0.0.1
+  Port 2222
+  User lucas
