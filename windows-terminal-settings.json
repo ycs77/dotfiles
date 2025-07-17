@@ -8,7 +8,7 @@
     {
         "defaults": 
         {
-            "backgroundImage": "D:/...",
+            "backgroundImage": "C:/Users/[user]/.my-terminal/image.png",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageOpacity": 0.1,
             "backgroundImageStretchMode": "none"
