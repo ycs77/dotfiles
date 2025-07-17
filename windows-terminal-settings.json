@@ -42,12 +42,12 @@
                     "face": "Consolas",
                     "size": 16.0
                 },
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{d008ebf2-9359-5619-8b57-03117ef0d121}",
                 "hidden": false,
-                "name": "Ubuntu",
+                "name": "Ubuntu-24.04",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "source": "Windows.Terminal.Wsl"
+                "source": "Microsoft.WSL"
             },
 
             // ...
