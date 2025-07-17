@@ -23,7 +23,7 @@
                 "font":
                 {
                     "face": "Consolas",
-                    "size": 16.0
+                    "size": 16
                 },
                 "guid": "{f234bf08-19c8-453d-96cf-862e63eae8d4}",
                 "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
@@ -40,7 +40,7 @@
                 "font":
                 {
                     "face": "Consolas",
-                    "size": 16.0
+                    "size": 16
                 },
                 "guid": "{d008ebf2-9359-5619-8b57-03117ef0d121}",
                 "hidden": false,
