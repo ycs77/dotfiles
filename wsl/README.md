@@ -11,17 +11,56 @@ wsl --update
 wsl --version
 ```
 
-## Setup WSL
+## Share Configuration Files
 
 ```sh
-sudo apt update && sudo apt upgrade -y
+# Share .gitconfig
+cp /mnt/c/Users/[username]/.gitconfig ~/.gitconfig
+
+# Share SSH Keys
+cp -r /mnt/c/Users/[username]/.ssh ~/.ssh
+chmod 400 ~/.ssh/*
+chmod 700 ~/.ssh
 ```
 
 ## Install Essential Packages
 
-*TODO*
+```sh
+sudo apt update && sudo apt upgrade -y
 
-## Docker Installation
+# Install Essential Packages
+sudo apt install -y \
+  git \
+  htop \
+  jq
+
+# Upgrade Git
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt update
+sudo apt install -y git
+git --version
+
+# Install Node.js
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+source ~/.bashrc
+nvm install 22
+node -v
+npm -v
+# Install Package Managers
+npm install -g npm@latest yarn yarn-deduplicate
+# Install AI Tools
+npm install -g @anthropic-ai/claude-code @google/gemini-cli ccusage
+```
+
+## Setup Aliases
+
+Add [`.bash_aliases`](./.bash_aliases) content to the file.
+
+```sh
+vim ~/.bash_aliases
+```
+
+## Docker
 
 Docker installation is referred from: https://blog.miniasp.com/post/2025/06/14/How-to-remove-Docker-Desktop-and-install-Docker-Engine-on-Windows-with-WSL-2
 
