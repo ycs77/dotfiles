@@ -14,11 +14,12 @@ wsl --version
 ## Setup WSL
 
 ```sh
-# enter your password
-
-# Update and upgrade packages
 sudo apt update && sudo apt upgrade -y
 ```
+
+## Install Essential Packages
+
+*TODO*
 
 ## Docker Installation
 
@@ -27,27 +28,17 @@ Docker installation is referred from: https://blog.miniasp.com/post/2025/06/14/H
 ### Install Docker Engine in WSL
 
 ```sh
-# Download install script for Docker
-# https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
 curl -fsSL https://get.docker.com -o get-docker.sh
-
-# Run the install script and ignore the warning about want you to install Docker Desktop
 sudo sh get-docker.sh
-
-# Manage Docker as a non-root user
-# https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 sudo usermod -aG docker $USER
-
-# Check Docker installation
-docker --version
-docker compose version
+rm get-docker.sh
 ```
-
-### Check the Docker Engine will automatically start when WSL starts
 
 Check Docker Engine service status:
 
 ```sh
+docker --version
+docker compose version
 systemctl status docker.service
 ```
 
@@ -55,12 +46,6 @@ systemctl status docker.service
 
 ```sh
 choco install docker-cli docker-compose -y
-
-# or using winget
-#
-# But this Docker Compose installation is only supported
-# using `docker-compose` command, not `docker compose`.
-winget install Docker.DockerCLI Docker.DockerCompose
 ```
 
 Setup `DOCKER_HOST` environment variable in Windows:
@@ -86,7 +71,7 @@ Test running a Docker container:
 docker run --rm -it hello-world
 ```
 
-Test running the [Portainer](https://www.portainer.io/):
+Test running the [Portainer](https://www.portainer.io/), visit http://localhost:9000/ in your browser:
 
 ```sh
 docker volume create portainer_data
