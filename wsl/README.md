@@ -50,6 +50,30 @@ npm -v
 npm install -g npm@latest yarn yarn-deduplicate
 # Install AI Tools
 npm install -g @anthropic-ai/claude-code @google/gemini-cli ccusage
+
+# Install PHP
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt update
+sudo apt install -y \
+  php8.3-cli \
+  php8.3-fpm \
+  php8.3-bcmath \
+  php8.3-curl \
+  php8.3-mbstring \
+  php8.3-mysql \
+  php8.3-tokenizer \
+  php8.3-xml \
+  php8.3-zip
+sudo update-alternatives --install /usr/bin/php php /usr/bin/php8.3 83
+php -v
+
+# Install Composer
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+HASH=`curl -sS https://composer.github.io/installer.sig`
+php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Composer installer verified'; } else { echo 'Composer installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+rm /tmp/composer-setup.php
+composer --version
 ```
 
 ## Setup Aliases
