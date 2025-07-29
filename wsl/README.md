@@ -107,19 +107,15 @@ systemctl status docker.service
 
 ### Setup Docker Cli on Windows
 
+Ensure you have [Chocolatey](https://chocolatey.org/install) installed on Windows.
+
+Then run the following command as Administrator in PowerShell:
+
 ```sh
 choco install docker-cli docker-compose -y
 ```
 
-Setup `DOCKER_HOST` environment variable in Windows:
-
-```sh
-# via PowerShell
-$env:DOCKER_HOST='localhost:2375'
-
-# via Command Prompt
-set DOCKER_HOST=localhost:2375
-```
+Setup `DOCKER_HOST` environment variable in Windows.
 
 Check Docker CLI installation on Windows:
 
