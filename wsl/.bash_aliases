@@ -2,8 +2,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias c='clear'
 alias co='code'
-alias cdco='cd /mnt/d/dev/code'
-alias cdte='cd /mnt/d/dev/testing'
+alias cdco='cd ~/dev/code'
+alias cdte='cd ~/dev/testing'
 alias g='git'
 
 function mkcd() {
@@ -17,14 +17,6 @@ function killport() {
 
 # Laravel Artisan
 alias pa='php artisan'
-alias pa71='php71 artisan'
-alias pa72='php72 artisan'
-alias pa73='php73 artisan'
-alias pa74='php74 artisan'
-alias pa80='php80 artisan'
-alias pa81='php81 artisan'
-alias pa82='php82 artisan'
-alias pa83='php83 artisan'
 alias pav='php artisan serve'
 alias pam='php artisan migrate'
 alias pams='php artisan migrate --seed'
