@@ -109,6 +109,31 @@ docker compose version
 systemctl status docker.service
 ```
 
+Let `dockerd` listen on both Unix socket file and TCP connection:
+
+```sh
+sudo tee /etc/docker/daemon.json <<'EOF'
+{
+  "hosts": [
+    "unix:///var/run/docker.sock",
+    "tcp://127.0.0.1:2375"
+  ]
+}
+EOF
+
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo tee /etc/systemd/system/docker.service.d/override.conf <<'EOF'
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --containerd=/run/containerd/containerd.sock
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+ss -lntp | grep 2375
+```
+
 ### [Windows] Setup Docker CLI
 
 Ensure you have [Chocolatey](https://chocolatey.org/install) installed on Windows.
