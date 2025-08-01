@@ -1,6 +1,6 @@
 # Lucas Yang's WSL Initialization Gulde
 
-## Installation
+## [Windows] Installation
 
 ```sh
 # Install WSL
@@ -11,7 +11,7 @@ wsl --update
 wsl --version
 ```
 
-## Share Configuration Files
+## [WSL] Share Configuration Files
 
 ```sh
 # Share .gitconfig
@@ -23,7 +23,7 @@ chmod 400 ~/.ssh/*
 chmod 700 ~/.ssh
 ```
 
-## Install Essential Packages
+## [WSL] Install Essential Packages
 
 ```sh
 sudo apt update && sudo apt upgrade -y
@@ -80,7 +80,7 @@ mkdir -p ~/dev/code
 mkdir -p ~/dev/testing
 ```
 
-## Setup Aliases
+## [WSL] Setup Aliases
 
 Add [`.bash_aliases`](./.bash_aliases) content to the file.
 
@@ -92,7 +92,7 @@ vim ~/.bash_aliases
 
 Docker installation is referred from: https://blog.miniasp.com/post/2025/06/14/How-to-remove-Docker-Desktop-and-install-Docker-Engine-on-Windows-with-WSL-2
 
-### Install Docker Engine in WSL
+### [WSL] Install Docker Engine
 
 ```sh
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -109,7 +109,7 @@ docker compose version
 systemctl status docker.service
 ```
 
-### Setup Docker Cli on Windows
+### [Windows] Setup Docker CLI
 
 Ensure you have [Chocolatey](https://chocolatey.org/install) installed on Windows.
 
@@ -119,7 +119,7 @@ Then run the following command as Administrator in PowerShell:
 choco install docker-cli docker-compose -y
 ```
 
-Setup `DOCKER_HOST` environment variable in Windows.
+Setup `DOCKER_HOST` environment variable as `localhost:2375` in Windows.
 
 Check Docker CLI installation on Windows:
 
