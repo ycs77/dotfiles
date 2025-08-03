@@ -3,14 +3,16 @@
 	fileMode = false
 	pager = less -r
 	quotepath = false
-[help]
-	autocorrect = 30
+[init]
+	defaultBranch = main
 [color]
 	diff = auto
 	status = auto
 	branch = auto
-[init]
-	defaultBranch = main
+[help]
+	autocorrect = 30
+[credential]
+	helper = wincred
 [alias]
 	cf = config
 	cfl = config --list
@@ -43,11 +45,3 @@
 	rr = remote remove
 	p = push
 	pl = pull
-[credential]
-	helper = wincred
-[gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
-[commit]
-	gpgSign = false
-[tag]
-	gpgSign = false
