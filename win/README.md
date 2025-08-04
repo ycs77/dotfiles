@@ -27,3 +27,13 @@ winget install --id=Anthropic.Claude -e
 winget install --id=Discord.Discord -e
 winget install --id=NickeManarin.ScreenToGif -e
 ```
+
+## Mount Cloud Storage
+
+Install Rclone to manage cloud storage:
+
+```sh
+winget install --id=Rclone.Rclone -e
+winget install --id=WinFsp.WinFsp -e
+rclone config
+```
