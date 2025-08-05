@@ -13,7 +13,7 @@ winget install --id=Microsoft.WindowsTerminal -e
 winget install --id=CoreyButler.NVMforWindows -e
 winget install --id=Git.Git -e
 winget install --id=GitHub.cli -e
-winget install --id=LeNgocKhoa.Laragon -v=6.0.0 -e
+winget install --id=LeNgocKhoa.Laragon -v "6.0.0" -e
 winget install --id=FiloSottile.mkcert -e
 
 # Applications
