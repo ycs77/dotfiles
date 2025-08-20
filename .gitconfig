@@ -1,5 +1,5 @@
 [core]
-	autocrlf = false
+	autocrlf = true
 	fileMode = false
 	pager = less -r
 	quotepath = false
@@ -43,5 +43,6 @@
 	r = remote -v
 	ra = remote add
 	rr = remote remove
+	rp = remote prune
 	p = push
 	pl = pull
