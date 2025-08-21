@@ -37,3 +37,16 @@ winget install --id=Rclone.Rclone -e
 winget install --id=WinFsp.WinFsp -e
 rclone config
 ```
+
+## Install Node.js Packages
+
+```sh
+nvm install 22
+nvm use 22
+# Install Package Managers
+npm install -g npm@latest yarn yarn-deduplicate
+# Install AI Tools
+npm install -g @anthropic-ai/claude-code @google/gemini-cli ccusage
+```
+
+Set the `CLAUDE_CODE_GIT_BASH_PATH` environment variable to the path of your Git Bash executable `C:\Program Files\git\bin\bash.exe`.
