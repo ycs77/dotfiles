@@ -30,11 +30,10 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 sudo apt install -y \
-  git \
   htop \
   jq
 
-# Upgrade Git
+# Install Git
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt update
 sudo apt install -y git
