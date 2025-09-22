@@ -44,5 +44,7 @@
 	ra = remote add
 	rr = remote remove
 	rp = remote prune
+	f = fetch
+	fp = fetch --prune
 	p = push
 	pl = pull
