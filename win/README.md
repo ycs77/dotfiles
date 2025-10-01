@@ -4,9 +4,9 @@
 
 ```sh
 # Useful tools
-winget install --id=7zip.7zip -e
 winget install --id=Gyan.FFmpeg -e
 winget install --id=yt-dlp.yt-dlp -e
+winget install --id=7zip.7zip -e
 
 # Development tools
 winget install --id=Microsoft.WindowsTerminal -e
