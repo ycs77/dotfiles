@@ -3,10 +3,10 @@
 //   - 觸發：登入時 / 當任何使用者登入時執行
 //   - 動作：
 //     程式或指令碼："C:\Program Files\nodejs\node.exe"
-//     新增引數：D:\...\character\change-image.js
+//     新增引數：C:\Users\[user]\.my-terminal\change-image.js
 
-const fs = require('fs')
-const path = require('path')
+import fs from 'node:fs'
+import path from 'node:path'
 
 changeImage({
   imageFilename: 'image.png',
@@ -16,11 +16,12 @@ changeImage({
 })
 
 function changeImage({ imageFilename, filenameTemplate, startIndex, endIndex }) {
+  const dirname = import.meta.dirname
   let index = startIndex
 
   // Read index from file
-  if (fs.existsSync(path.resolve(__dirname, 'index'))) {
-    index = parseInt(fs.readFileSync(path.resolve(__dirname, 'index'), 'utf-8'))
+  if (fs.existsSync(path.resolve(dirname, 'index'))) {
+    index = parseInt(fs.readFileSync(path.resolve(dirname, 'index'), 'utf-8'))
 
     index++
 
@@ -31,11 +32,11 @@ function changeImage({ imageFilename, filenameTemplate, startIndex, endIndex }) 
   }
 
   // Save index to file
-  fs.writeFileSync(path.resolve(__dirname, 'index'), String(index), 'utf-8')
+  fs.writeFileSync(path.resolve(dirname, 'index'), String(index), 'utf-8')
 
   // Copy image
   fs.copyFileSync(
-    path.resolve(__dirname, filenameTemplate.replace('%s', String(index).padStart(2, '0'))),
-    path.resolve(__dirname, imageFilename)
+    path.resolve(dirname, filenameTemplate.replace('%s', String(index).padStart(2, '0'))),
+    path.resolve(dirname, imageFilename)
   )
 }
