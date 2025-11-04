@@ -48,8 +48,10 @@ node -v
 npm -v
 # Install Package Managers
 npm install -g npm@latest yarn yarn-deduplicate
+
 # Install AI Tools
-npm install -g @anthropic-ai/claude-code @google/gemini-cli ccusage
+npm install -g @github/copilot @google/gemini-cli
+curl -fsSL https://claude.ai/install.sh | bash
 
 # Install PHP
 sudo add-apt-repository ppa:ondrej/php -y

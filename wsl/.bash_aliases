@@ -5,6 +5,7 @@ alias co='code'
 alias cdco='cd ~/dev/code'
 alias cdte='cd ~/dev/testing'
 alias g='git'
+alias cc='copilot'
 alias ccc='claude'
 alias ggg='gemini'
 
