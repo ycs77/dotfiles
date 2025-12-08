@@ -7,7 +7,7 @@
 
     "profiles": {
         "defaults": {
-            "backgroundImage": "C:/Users/[user]/.my-terminal/image.png",
+            "backgroundImage": "C:/Users/[user]/.terminal-wallpaper/image.png",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageOpacity": 0.1,
             "backgroundImageStretchMode": "none"
