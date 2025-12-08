@@ -1,9 +1,9 @@
 // 工作排程器
-//   - 名稱：ChangeTerminalBackgroundImage
+//   - 名稱：ChangeTerminalWallpaper
 //   - 觸發：登入時 / 當任何使用者登入時執行
 //   - 動作：
 //     程式或指令碼："C:\Program Files\nodejs\node.exe"
-//     新增引數：C:\Users\[user]\.terminal-wallpaper\change-image.js
+//     新增引數：C:\Users\[user]\.terminal-wallpaper\change-wallpaper.js
 
 import fs from 'node:fs'
 import path from 'node:path'
