@@ -46,12 +46,3 @@ nvm use 22
 # Install Package Managers
 npm install -g npm@latest yarn yarn-deduplicate
 ```
-
-Set the `CLAUDE_CODE_GIT_BASH_PATH` environment variable to the path of your Git Bash executable `C:\Program Files\git\bin\bash.exe`.
-
-## Install AI Tools
-
-```sh
-npm install -g @github/copilot @google/gemini-cli
-irm https://claude.ai/install.ps1 | iex
-```
