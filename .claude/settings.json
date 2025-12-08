@@ -1,0 +1,6 @@
+{
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": ["Read", "Edit", "Write", "WebFetch", "WebSearch"]
+  }
+}

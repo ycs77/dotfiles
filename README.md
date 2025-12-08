@@ -8,6 +8,7 @@ I am using OS Windows 11 and the terminal is Git Bash.
 * `aliases.sh` => `C:\Program Files\Git\etc\profile.d\aliases.sh`
 * `windows-terminal-settings.json` (partial settings config) => `C:\Users\[user]\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
 * `.my-terminal` => `C:\Users\[user]\.my-terminal`
+* `.claude/settings.json` => `C:\Users\[user]\.claude\settings.json`
 
 ## Setup Terminal Background Image
 

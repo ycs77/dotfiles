@@ -46,3 +46,15 @@ nvm use 22
 # Install Package Managers
 npm install -g npm@latest yarn yarn-deduplicate
 ```
+
+## Git Bash Configuration
+
+Configure the bell sound in Bash on Windows:
+
+```sh
+# Enable bell sound
+echo "set bell-style audible" >> ~/.inputrc
+
+# Disable bell sound
+echo "set bell-style none" >> ~/.inputrc
+```
