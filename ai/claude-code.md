@@ -26,16 +26,6 @@ Set up basic notifications for Claude Code by adding the following to your `sett
           }
         ]
       }
-    ],
-    "SubagentStop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -Command \"(New-Object System.Media.SoundPlayer 'C:\\Users\\[user]\\.claude\\audios\\stop.wav').PlaySync()\""
-          }
-        ]
-      }
     ]
   }
 }
