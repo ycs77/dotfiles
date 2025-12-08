@@ -1,24 +1,31 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    // ...
+
     "defaultProfile": "{f234bf08-19c8-453d-96cf-862e63eae8d4}",
 
     // ...
 
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "backgroundImage": "C:/Users/[user]/.terminal-wallpaper/image.png",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageOpacity": 0.1,
             "backgroundImageStretchMode": "none"
         },
-        "list": [
+        "list": 
+        [
             {
                 "colorScheme": "One Half Dark",
                 "commandline": "%PROGRAMFILES%/Git/bin/bash.exe --login -i",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "filledBox",
-                "font": {
+                "font": 
+                {
                     "face": "Consolas",
                     "size": 16
                 },
@@ -38,7 +45,7 @@
                     "face": "Consolas",
                     "size": 16
                 },
-                "guid": "{4ca5f9e1-fa33-58e0-9854-fb9587ce9a31}",
+                "guid": "{d008ebf2-9359-5619-8b57-03117ef0d121}",
                 "hidden": false,
                 "name": "Ubuntu-24.04",
                 "padding": "0, 0, 0, 0",
