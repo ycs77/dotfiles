@@ -10,9 +10,18 @@ I am using OS Windows 11 and the terminal is Git Bash.
 * `.terminal-wallpaper` => `C:\Users\[user]\.terminal-wallpaper`
 * `.claude/settings.json` => `C:\Users\[user]\.claude\settings.json`
 
-## Setup Terminal Background Image
+## Setup Terminal Wallpaper
 
-You can automate changing the Windows Terminal background image using Task Scheduler:
+To set up terminal wallpaper, run the following commands in Git Bash:
+
+```bash
+git clone https://github.com/ycs77/terminal-wallpaper.git
+cd terminal-wallpaper
+./terminal-wallpaper init
+./terminal-wallpaper add majotabi
+```
+
+You can automate changing the Windows Terminal Wallpaper using Task Scheduler:
 
 - **Task Name:** ChangeTerminalWallpaper
 - **Trigger:** At logon / When any user logs on
