@@ -18,7 +18,7 @@ To set up terminal wallpaper, run the following commands in Git Bash:
 git clone https://github.com/ycs77/terminal-wallpaper.git
 cd terminal-wallpaper
 ./terminal-wallpaper init
-./terminal-wallpaper add majotabi
+./terminal-wallpaper add manosaba-characters
 ```
 
 You can automate changing the Windows Terminal Wallpaper using Task Scheduler:
