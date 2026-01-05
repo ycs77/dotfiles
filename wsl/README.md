@@ -90,6 +90,12 @@ Add [`.bash_aliases`](./.bash_aliases) content to the file.
 vim ~/.bash_aliases
 ```
 
+## [WSL] Set Default Editor to Vim
+
+```sh
+sudo update-alternatives --set editor /usr/bin/vim.basic
+```
+
 ## Docker
 
 Docker installation is referred from: https://blog.miniasp.com/post/2025/06/14/How-to-remove-Docker-Desktop-and-install-Docker-Engine-on-Windows-with-WSL-2
