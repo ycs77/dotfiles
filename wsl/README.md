@@ -11,6 +11,18 @@ wsl --update
 wsl --version
 ```
 
+## [WSL] Initial Configuration
+
+```sh
+# Set Vim as the default editor
+sudo update-alternatives --set editor /usr/bin/vim.basic
+
+# Remove user sudo password (replace [username] with your actual username)
+sudo vim /etc/sudoers.d/[username]
+# Add the following line:
+[username] ALL=(ALL) NOPASSWD:ALL
+```
+
 ## [WSL] Share Configuration Files
 
 ```sh
@@ -88,12 +100,6 @@ Add [`.bash_aliases`](./.bash_aliases) content to the file.
 
 ```sh
 vim ~/.bash_aliases
-```
-
-## [WSL] Set Default Editor to Vim
-
-```sh
-sudo update-alternatives --set editor /usr/bin/vim.basic
 ```
 
 ## Docker
