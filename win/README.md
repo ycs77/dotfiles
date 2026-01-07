@@ -41,8 +41,8 @@ rclone config
 ## Install Node.js Packages
 
 ```sh
-nvm install 22
-nvm use 22
+nvm install 24
+nvm use 24
 # Install Package Managers
 npm install -g npm@latest yarn yarn-deduplicate
 ```
