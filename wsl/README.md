@@ -56,10 +56,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 source ~/.bashrc
 nvm install 24
 nvm use 24
-node -v
-npm -v
 # Install Package Managers
-npm install -g npm@latest yarn yarn-deduplicate
+npm install -g npm@latest corepack@latest yarn yarn-deduplicate yarn1-listdup
 
 # Install AI Tools
 npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context7-mcp

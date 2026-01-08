@@ -44,7 +44,7 @@ rclone config
 nvm install 24
 nvm use 24
 # Install Package Managers
-npm install -g npm@latest yarn yarn-deduplicate
+npm install -g npm@latest corepack@latest yarn yarn-deduplicate yarn1-listdup
 ```
 
 ## Git Bash Configuration
