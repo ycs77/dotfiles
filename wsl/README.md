@@ -62,7 +62,7 @@ npm -v
 npm install -g npm@latest yarn yarn-deduplicate
 
 # Install AI Tools
-npm install -g @github/copilot @google/gemini-cli
+npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context7-mcp
 curl -fsSL https://claude.ai/install.sh | bash
 
 # Install PHP
