@@ -53,20 +53,19 @@ alias supd='sail up -d'
 alias sdown='sail down'
 alias sa='sail artisan'
 
-# NPM
-alias ni='npm install'
-alias nd='npm run dev'
-alias nb='npm run build'
-alias nl='npm run lint'
-alias nt='npm run test'
-alias npmls='npm ls -g --depth 0'
-alias y='yarn'
-alias yd='yarn dev'
-alias yb='yarn build'
-alias yl='yarn lint'
-alias ylf='yarn lint --fix'
-alias yt='yarn test'
-alias ytr='yarn test --run'
+# NPM (requires @antfu/ni)
+alias nv='nr dev' # nd exists in @antfu/ni
+alias nb='nr build'
+alias nl='nr lint'
+alias nlf='nr lint --fix'
+alias nt='nr test'
+alias ntr='nr test --run'
+alias yd='nr dev'
+alias yb='nr build'
+alias yl='nr lint'
+alias ylf='nr lint --fix'
+alias yt='nr test'
+alias ytr='nr test --run'
 
 # PHP version
 alias php71='/c/laragon/bin/php/php-7.1.33-Win32-VC14-x64/php'
