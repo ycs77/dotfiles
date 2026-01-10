@@ -52,12 +52,6 @@ alias nl='nr lint'
 alias nlf='nr lint --fix'
 alias nt='nr test'
 alias ntr='nr test --run'
-alias yd='nr dev'
-alias yb='nr build'
-alias yl='nr lint'
-alias ylf='nr lint --fix'
-alias yt='nr test'
-alias ytr='nr test --run'
 
 # Docker
 alias d='docker'
