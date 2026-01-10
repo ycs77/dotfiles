@@ -57,7 +57,9 @@ source ~/.bashrc
 nvm install 24
 nvm use 24
 # Install Package Managers
-npm install -g npm@latest corepack@latest yarn yarn-deduplicate @antfu/ni
+npm install -g npm@latest corepack@latest yarn-deduplicate @antfu/ni
+corepack enable pnpm
+npm install -g -f yarn
 
 # Install AI Tools
 npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context7-mcp
