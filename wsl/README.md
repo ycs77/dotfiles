@@ -55,7 +55,7 @@ git --version
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 source ~/.bashrc
 nvm install 24
-nvm use 24
+nvm alias default 24
 # Install Package Managers
 npm install -g npm@latest corepack@latest yarn-deduplicate @antfu/ni
 corepack enable pnpm
