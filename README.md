@@ -9,7 +9,6 @@ I am using OS Windows 11 and the terminal is Git Bash.
 * `.bashrc` => `C:\Users\[user]\.bashrc`
 * `.bash_aliases` => `C:\Users\[user]\.bash_aliases`
 * `windows-terminal-settings.json` (partial settings config) => `C:\Users\[user]\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
-* `.terminal-wallpaper` => `C:\Users\[user]\.terminal-wallpaper`
 * `.claude/settings.json` => `C:\Users\[user]\.claude\settings.json`
 
 ## Setup Terminal Wallpaper
