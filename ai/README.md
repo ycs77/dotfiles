@@ -8,6 +8,14 @@ npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context
 
 ## Install Claude Code
 
+For Bash (Linux/macOS):
+
+```sh
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+For PowerShell (Windows):
+
 ```sh
 irm https://claude.ai/install.ps1 | iex
 ```

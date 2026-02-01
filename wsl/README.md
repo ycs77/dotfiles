@@ -61,10 +61,6 @@ npm install -g npm@latest corepack@latest yarn-deduplicate @antfu/ni
 corepack enable pnpm
 npm install -g -f yarn
 
-# Install AI Tools
-npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context7-mcp
-curl -fsSL https://claude.ai/install.sh | bash
-
 # Install PHP
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
