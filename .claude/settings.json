@@ -1,11 +1,36 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "Read",
       "Edit",
       "Write",
-      "WebFetch",
-      "WebSearch"
+      "WebSearch",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(pwd)",
+      "Bash(echo *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -rf ./*)",
+      "Bash(rm -r *)",
+      "Bash(rm -r ./*)",
+      "Bash(sudo *)",
+      "Bash(cat *env*)",
+      "Bash(cat *secret*)",
+      "Bash(cat *credential*)",
+      "Bash(cat *.pem)",
+      "Bash(cat *.key)",
+      "Read(.env*)",
+      "Edit(.env*)",
+      "Write(.env*)",
+      "Read(secrets/**)",
+      "Read(**/*credential*)",
+      "Read(**/*secret*)",
+      "Read(**/*token*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)"
     ]
   },
   "alwaysThinkingEnabled": true
