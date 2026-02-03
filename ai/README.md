@@ -9,7 +9,7 @@ npm install -g @github/copilot @google/gemini-cli @openai/codex @upstash/context
 ## Install Skills
 
 ```sh
-npx skills add ycs77/skills -g -a claude-code -a github-copilot -s '*' -y
+npx skills add ycs77/skills -g -a claude-code -a gemini-cli -a github-copilot -s '*' -y
 ```
 
 ## Install Claude Code
