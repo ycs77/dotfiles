@@ -48,3 +48,7 @@
 	fp = fetch --prune
 	p = push
 	pl = pull
+[gpg]
+	program = C:\\Program Files\\Git\\usr\\bin\\gpg.exe
+[commit]
+	gpgSign = true
