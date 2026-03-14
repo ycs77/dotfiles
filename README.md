@@ -8,6 +8,7 @@ I am using OS Windows 11 and the terminal is Git Bash.
 * `.bash_profile` => `C:\Users\[user]\.bash_profile`
 * `.bashrc` => `C:\Users\[user]\.bashrc`
 * `.bash_aliases` => `C:\Users\[user]\.bash_aliases`
+* `.gnupg/gpg-agent.conf` => `C:\Users\[user]\.gnupg\gpg-agent.conf`
 * `windows-terminal-settings.json` (partial settings config) => `C:\Users\[user]\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
 * `.claude/settings.json` => `C:\Users\[user]\.claude\settings.json`
 
