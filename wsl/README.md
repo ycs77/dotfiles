@@ -169,17 +169,6 @@ Test running a Docker container:
 docker run --rm -it hello-world
 ```
 
-Test running the [Portainer](https://www.portainer.io/), visit http://localhost:9000/ in your browser:
-
-```sh
-docker volume create portainer_data
-docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name portainer \
-  --restart=always \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v portainer_data:/data \
-  portainer/portainer-ce:latest
-```
-
 ### Setup VSCode Container Tools extension configuration
 
 ```json
