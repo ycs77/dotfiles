@@ -71,6 +71,7 @@ sudo apt install -y \
   php8.3-curl \
   php8.3-mbstring \
   php8.3-mysql \
+  php8.3-sqlite3 \
   php8.3-tokenizer \
   php8.3-xml \
   php8.3-zip
