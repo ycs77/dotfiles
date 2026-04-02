@@ -77,6 +77,8 @@ sudo apt install -y \
   php8.3-zip
 sudo update-alternatives --install /usr/bin/php php /usr/bin/php8.3 83
 php -v
+sudo sed -i 's/upload_max_filesize = .*/upload_max_filesize = 100M/' /etc/php/8.3/cli/php.ini
+sudo sed -i 's/post_max_size = .*/post_max_size = 100M/' /etc/php/8.3/cli/php.ini
 
 # Install Composer
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
