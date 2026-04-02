@@ -43,7 +43,10 @@ sudo apt update && sudo apt upgrade -y
 # Install Essential Packages
 sudo apt install -y \
   htop \
-  jq
+  jq \
+  fzf \
+  ripgrep \
+  zip
 
 # Install Git
 sudo add-apt-repository ppa:git-core/ppa -y
