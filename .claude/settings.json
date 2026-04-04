@@ -35,5 +35,7 @@
       "Read(**/*.pem)",
       "Read(**/*.key)"
     ]
-  }
+  },
+  "autoMemoryEnabled": false,
+  "autoUpdatesChannel": "stable"
 }
