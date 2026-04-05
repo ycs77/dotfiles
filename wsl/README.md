@@ -28,7 +28,6 @@ sudo vim /etc/sudoers.d/[username]
 ```sh
 # Share .gitconfig
 cp /mnt/c/Users/[username]/.gitconfig ~/.gitconfig
-sed -i 's/autocrlf = true/autocrlf = input/' ~/.gitconfig
 
 # Share SSH Keys
 cp -r /mnt/c/Users/[username]/.ssh ~/.ssh

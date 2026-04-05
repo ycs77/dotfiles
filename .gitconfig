@@ -1,5 +1,5 @@
 [core]
-	autocrlf = true
+	autocrlf = input
 	fileMode = false
 	pager = less -r
 	quotepath = false
