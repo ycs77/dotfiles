@@ -48,6 +48,7 @@
 	fp = fetch --prune
 	p = push
 	pl = pull
+	disable-sign = config --local commit.gpgSign false
 [gpg]
 	program = C:\\Program Files\\Git\\usr\\bin\\gpg.exe
 [commit]
