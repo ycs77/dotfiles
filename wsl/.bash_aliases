@@ -52,6 +52,7 @@ alias nl='nr lint'
 alias nlf='nr lint --fix'
 alias nf='nr fmt'
 alias nfc='nr fmt --check'
+alias nc='nr check'
 alias nt='nr test'
 alias ntr='nr test --run'
 
