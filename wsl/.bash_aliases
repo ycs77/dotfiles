@@ -72,3 +72,7 @@ alias dup='docker compose up'
 alias dupd='docker compose up -d'
 alias dstop='docker compose stop'
 alias ddown='docker compose down'
+
+# HolyClaude (see: https://github.com/ycs77/HolyClaude)
+alias cdho='cd ~/dev/HolyClaude'
+alias holyclaude='docker compose exec -it -u claude holyclaude /bin/bash'
