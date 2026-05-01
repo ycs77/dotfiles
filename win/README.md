@@ -41,10 +41,6 @@ npm install -g -f yarn
 
 ## Git Bash Configuration
 
-### Fix Terminal Compatibility
-
-Comment out the `winpty` alias in `C:\Program Files\Git\etc\profile.d\aliases.sh`, since modern Windows already provide better compatibility. Keeping `winpty` may cause the `TERM` environment variable to be set incorrectly.
-
 ### Configure Bell Sound
 
 ```sh
