@@ -42,6 +42,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 sudo apt install -y \
+  build-essential \
   htop \
   jq \
   fzf \
