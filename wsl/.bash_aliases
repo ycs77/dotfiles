@@ -7,6 +7,7 @@ alias cdte='cd ~/dev/testing'
 alias g='git'
 alias cc='copilot'
 alias ccc='claude'
+alias ccx='codex'
 alias ggg='gemini'
 
 function mkcd() {

@@ -7,6 +7,8 @@ alias cdte='cd /d/dev/testing'
 alias g='git'
 alias cc='copilot'
 alias ccc='claude'
+alias ccx='codex'
+alias ccxfull='codex --sandbox danger-full-access --ask-for-approval untrusted'
 alias ggg='gemini'
 
 function mkcd() {
