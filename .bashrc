@@ -5,6 +5,3 @@
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
-
-# Support Terminal Shell Integration for VSCode
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"
