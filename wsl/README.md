@@ -93,6 +93,12 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 rm /tmp/composer-setup.php
 composer --version
 
+# Install MySQL
+sudo apt install -y mysql-server
+sudo systemctl start mysql
+sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY ''; FLUSH PRIVILEGES;"
+sudo systemctl restart mysql
+
 # Create Development Directories
 mkdir -p ~/dev/code
 mkdir -p ~/dev/testing
