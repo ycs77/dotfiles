@@ -10,7 +10,7 @@ alias ccc='claude'
 alias cccyolo='claude --dangerously-skip-permissions'
 alias ccx='codex'
 alias ccxyolo='codex --sandbox workspace-write --ask-for-approval never'
-alias ggg='gemini'
+alias ggg='agy'
 
 function mkcd() {
   mkdir "$1"

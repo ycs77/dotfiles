@@ -9,7 +9,7 @@ alias cc='copilot'
 alias ccc='claude'
 alias ccx='codex'
 alias ccxfull='codex --sandbox danger-full-access --ask-for-approval untrusted'
-alias ggg='gemini'
+alias ggg='agy'
 
 function mkcd() {
   mkdir "$1"
