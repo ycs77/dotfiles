@@ -52,4 +52,4 @@
 [gpg]
 	program = C:\\Program Files\\Git\\usr\\bin\\gpg.exe
 [commit]
-	gpgSign = true
+	gpgSign = false
