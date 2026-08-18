@@ -35,7 +35,7 @@ nvm install 24
 nvm use 24
 # Install Package Managers
 npm config set allow-scripts=yarn --location=user
-npm install -g npm@latest yarn pnpm yarn-deduplicate @antfu/ni
+npm install -g npm yarn pnpm yarn-deduplicate @antfu/ni
 # Uninstall corepack for <= Node.js 24
 npm uninstall -g corepack
 ```
