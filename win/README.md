@@ -34,10 +34,10 @@ winget install --id=NickeManarin.ScreenToGif -e
 nvm install 24
 nvm use 24
 # Install Package Managers
-npm config set allow-scripts=yarn --location=user
-npm install -g npm yarn pnpm yarn-deduplicate @antfu/ni
+npm install -g npm
 # Uninstall corepack for <= Node.js 24
 npm uninstall -g corepack
+npm install -g yarn pnpm yarn-deduplicate @antfu/ni
 ```
 
 ## Git Bash Configuration
