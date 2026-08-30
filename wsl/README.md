@@ -113,83 +113,11 @@ Add [`.bash_aliases`](./.bash_aliases) content to the file.
 vim ~/.bash_aliases
 ```
 
-## Docker
+## [Windows] Install Docker Desktop
 
-Docker installation is referred from: https://blog.miniasp.com/post/2025/06/14/How-to-remove-Docker-Desktop-and-install-Docker-Engine-on-Windows-with-WSL-2
+Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
-### [WSL] Install Docker Engine
-
-```sh
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker $USER
-rm get-docker.sh
-```
-
-Check Docker Engine service status:
-
-```sh
-docker --version
-docker compose version
-systemctl status docker.service
-```
-
-Let `dockerd` listen on both Unix socket file and TCP connection:
-
-```sh
-sudo tee /etc/docker/daemon.json <<'EOF'
-{
-  "hosts": [
-    "unix:///var/run/docker.sock",
-    "tcp://127.0.0.1:2375"
-  ]
-}
-EOF
-
-sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo tee /etc/systemd/system/docker.service.d/override.conf <<'EOF'
-[Service]
-ExecStart=
-ExecStart=/usr/bin/dockerd --containerd=/run/containerd/containerd.sock
-EOF
-
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-
-ss -lntp | grep 2375
-```
-
-### [Windows] Setup Docker CLI
-
-Ensure you have [Chocolatey](https://chocolatey.org/install) installed on Windows.
-
-Then run the following command as Administrator in PowerShell:
-
-```sh
-choco install docker-cli docker-compose -y
-```
-
-Setup `DOCKER_HOST` environment variable as `localhost:2375` in Windows.
-
-Check Docker CLI installation on Windows:
-
-```sh
-docker version
-docker compose version
-```
-
-Test running a Docker container:
-
-```sh
-docker run --rm -it hello-world
-```
-
-### Setup VSCode Container Tools extension configuration
-
-```json
-{
-  "containers.environment": {
-    "DOCKER_HOST": "tcp://localhost:2375"
-  }
-}
-```
+Then open Docker Desktop and configure the following settings:
+- **General**, enable **Start Docker Desktop when you sign in to your computer**.
+- **General**, disable **Open Docker Dashboard when Docker Desktop starts**.
+- **Resources > WSL Integration**, enable **Enable integration with my default WSL distro**, then select **Ubuntu-24.04**.
