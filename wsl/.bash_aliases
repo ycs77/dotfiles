@@ -22,8 +22,16 @@ function killport() {
   sudo kill -9 $(sudo lsof -t -i:"$1")
 }
 
+# PHP version
+alias composer83='php8.3 /usr/local/bin/composer'
+alias composer84='php8.4 /usr/local/bin/composer'
+alias composer85='php8.5 /usr/local/bin/composer'
+
 # Laravel Artisan
 alias pa='php artisan'
+alias pa83='php8.3 artisan'
+alias pa84='php8.4 artisan'
+alias pa85='php8.5 artisan'
 alias pav='php artisan serve'
 alias pam='php artisan migrate'
 alias pams='php artisan migrate --seed'
