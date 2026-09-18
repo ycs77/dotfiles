@@ -10,7 +10,6 @@ alias ccc='claude'
 alias ccx='codex'
 alias ccxfull='codex --sandbox danger-full-access --ask-for-approval untrusted'
 alias ggg='agy'
-alias ooc='opencode'
 
 function mkcd() {
   mkdir "$1"
