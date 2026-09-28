@@ -1,5 +1,19 @@
 # Lucas Yang's Windows 11 Initialization Gulde
 
+## Setup DNS Server
+
+IPv4:
+
+- 1.1.1.2
+- 1.0.0.2
+
+IPv6:
+
+- 2606:4700:4700::1112
+- 2606:4700:4700::1002
+
+See: [Cloudflare DNS - Set up 1.1.1.1 on Windows](https://developers.cloudflare.com/1.1.1.1/setup/windows/#windows-11)
+
 ## Install Packages
 
 ```sh
