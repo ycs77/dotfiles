@@ -35,6 +35,15 @@ chmod 400 ~/.ssh/*
 chmod 700 ~/.ssh
 ```
 
+## [WSL] Disable IPv6
+
+Disable IPv6 to resolve the issue of WSL being unable to connect to Composer server:
+
+```sh
+echo -e "net.ipv6.conf.all.disable_ipv6 = 1\nnet.ipv6.conf.default.disable_ipv6 = 1" | sudo tee /etc/sysctl.d/99-disable-ipv6.conf
+sudo sysctl --system
+```
+
 ## [WSL] Install Essential Packages
 
 ```sh
