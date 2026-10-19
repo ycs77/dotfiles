@@ -18,8 +18,8 @@
 	cfl = config --list
 	s = status
 	a = add .
-	l = log --oneline --graph
-	la = log --oneline --graph --all
+	l = log --oneline --graph --date-order
+	la = log --oneline --graph --date-order --all
 	last = log -1 HEAD
 	c = commit
 	cm = commit -m
