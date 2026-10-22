@@ -45,8 +45,8 @@ winget install --id=NickeManarin.ScreenToGif -e
 ## Install Node.js Packages
 
 ```sh
-nvm install 24
-nvm use 24
+nvm install 26
+nvm use 26
 # Install Package Managers
 npm install -g npm
 # Uninstall corepack for <= Node.js 24
