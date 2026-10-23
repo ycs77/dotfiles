@@ -70,10 +70,10 @@ source ~/.bashrc
 nvm install 26
 nvm alias default 26
 # Install Package Managers
-npm install -g npm
+npm install -g npm@latest
 # Uninstall corepack for <= Node.js 24
 npm uninstall -g corepack
-npm install -g yarn pnpm yarn-deduplicate @antfu/ni
+npm install -g yarn pnpm @antfu/ni --allow-scripts=pnpm,yarn
 
 # Install PHP
 sudo add-apt-repository ppa:ondrej/php -y
