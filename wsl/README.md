@@ -1,4 +1,4 @@
-# Lucas Yang's WSL Initialization Gulde
+# Lucas Yang's WSL Initialization Guide
 
 ## [Windows] Installation
 

@@ -1,4 +1,4 @@
-# Lucas Yang's Windows 11 Initialization Gulde
+# Lucas Yang's Windows 11 Initialization Guide
 
 ## Setup DNS Server
 
