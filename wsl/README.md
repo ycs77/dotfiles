@@ -110,6 +110,9 @@ sudo systemctl start mysql
 sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY ''; FLUSH PRIVILEGES;"
 sudo systemctl restart mysql
 
+# Install Mole (Clean Tool)
+curl -fsSL https://raw.githubusercontent.com/tw93/Mole/linux/install.sh | bash
+
 # Create Development Directories
 mkdir -p ~/dev/code
 mkdir -p ~/dev/testing

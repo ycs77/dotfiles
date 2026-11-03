@@ -54,6 +54,12 @@ npm uninstall -g corepack
 npm install -g yarn pnpm @antfu/ni --allow-scripts=pnpm,yarn
 ```
 
+## Install Mole
+
+```sh
+iwr -useb https://raw.githubusercontent.com/tw93/Mole/windows/quick-install.ps1 | iex
+```
+
 ## Git Bash Configuration
 
 ### Configure Bell Sound
