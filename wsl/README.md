@@ -75,6 +75,13 @@ npm install -g npm@latest
 npm uninstall -g corepack
 npm install -g yarn pnpm @antfu/ni --allow-scripts=pnpm,yarn
 
+# Node.js force IPv4 DNS resolution
+cat << 'EOF' >> ~/.bashrc
+
+# Node.js force IPv4 DNS resolution to prevent network issues
+export NODE_OPTIONS="--dns-result-order=ipv4first"
+EOF
+
 # Install PHP
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
