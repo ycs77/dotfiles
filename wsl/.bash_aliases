@@ -11,6 +11,7 @@ alias cccyolo='claude --dangerously-skip-permissions'
 alias ccx='codex'
 alias ccxyolo='codex --sandbox workspace-write --ask-for-approval never'
 alias ggg='agy'
+alias hdr='herdr'
 
 function mkcd() {
   mkdir "$1"
